@@ -1,0 +1,10 @@
+﻿# Ignore raw and processed data
+raw/*
+processed/*
+
+# Keep directory structure
+!raw/.gitkeep
+!processed/.gitkeep
+
+# Keep version control
+!versions.json

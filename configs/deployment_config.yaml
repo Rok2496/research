@@ -1,0 +1,57 @@
+﻿deployment:
+  # Server Configuration
+  server:
+    host: "0.0.0.0"
+    port: 8000
+    workers: 4
+    timeout: 120
+    
+  # Model Serving
+  serving:
+    model_name: "chexpert_ensemble"
+    batch_size: 16
+    max_queue_size: 32
+    use_gpu: true
+    
+  # Monitoring
+  monitoring:
+    tensorboard:
+      log_dir: "logs/tensorboard"
+      update_freq: "epoch"
+    
+    profiler:
+      enabled: true
+      warm_up: 10
+      wait: 2
+      
+  # Docker Settings
+  docker:
+    base_image: "python:3.9-slim"
+    cuda_version: "11.3"
+    expose_ports: [8000, 6006]
+    
+  # SSL Configuration
+  ssl:
+    enabled: true
+    cert_path: "/etc/ssl/certs/cert.pem"
+    key_path: "/etc/ssl/private/key.pem"
+    
+  # Logging
+  logging:
+    level: "INFO"
+    format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+    file: "logs/deployment.log"
+    
+  # PACS Integration
+  pacs:
+    enabled: true
+    host: "localhost"
+    port: 11112
+    ae_title: "CHEXPERT"
+    
+  # Cache Settings
+  cache:
+    type: "redis"
+    host: "localhost"
+    port: 6379
+    ttl: 3600

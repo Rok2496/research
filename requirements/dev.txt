@@ -1,0 +1,32 @@
+﻿-r base.txt
+
+# Development Tools
+pytest
+pytest-cov
+black
+flake8
+isort
+
+# Notebooks
+jupyter
+jupyterlab
+ipywidgets
+
+# Debugging
+ipdb
+line-profiler
+
+# Documentation
+Sphinx
+sphinx-rtd-theme
+nbsphinx
+
+# Testing
+pytest-mock
+pytest-benchmark
+coverage
+
+# Development Monitoring
+tensorboard
+wandb
+mlflow

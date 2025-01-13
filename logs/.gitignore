@@ -1,0 +1,13 @@
+﻿# Ignore log files
+*.log
+tensorboard/*
+deployment/*
+mlflow/*
+
+# Keep directory structure
+!tensorboard/.gitkeep
+!deployment/.gitkeep
+!mlflow/.gitkeep
+
+# Keep configuration
+!monitoring_config.json

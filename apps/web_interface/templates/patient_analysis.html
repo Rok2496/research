@@ -1,0 +1,37 @@
+﻿{% extends "base.html" %}
+{% block content %}
+<div class="analysis-container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Patient Information</h4>
+                </div>
+                <div class="card-body">
+                    <form id="patientAnalysisForm">
+                        <div class="mb-3">
+                            <label for="patientId" class="form-label">Patient ID</label>
+                            <input type="text" class="form-control" id="patientId" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="xrayImage" class="form-label">X-ray Image</label>
+                            <input type="file" class="form-control" id="xrayImage" accept="image/*" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Analyze</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Analysis Results</h4>
+                </div>
+                <div class="card-body">
+                    <div id="analysisResults"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

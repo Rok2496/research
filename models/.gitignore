@@ -1,0 +1,7 @@
+﻿# Ignore large model files
+*.pth
+*.onnx
+*.pt
+
+# Keep directory structure
+!.gitkeep

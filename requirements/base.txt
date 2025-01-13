@@ -1,0 +1,31 @@
+﻿# Deep Learning
+torch
+torchvision
+efficientnet-pytorch
+timm
+
+# Image Processing
+opencv-python-headless # Changed from opencv-python
+albumentations
+Pillow  # Updated version
+scikit-image  # Updated version
+
+# Machine Learning
+numpy
+pandas
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Model Interpretability
+shap
+lime
+grad-cam
+
+# Utilities
+PyYAML
+tqdm
+python-dotenv

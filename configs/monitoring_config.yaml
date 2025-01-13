@@ -1,0 +1,11 @@
+tensorboard:
+  log_dir: "tensorboard"
+  flush_secs: 30
+
+mlflow:
+  tracking_uri: "postgresql://postgres:1234@localhost:5432/mlflow"
+  experiment_name: "chexpert_training"
+  artifact_location: "mlruns"
+
+deployment:
+  log_level: "INFO"

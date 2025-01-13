@@ -1,0 +1,19 @@
+﻿{
+    "dataset": {
+        "name": "CheXpert-v1.0",
+        "version": "1.0.0",
+        "last_updated": "2023-01-01",
+        "stats": {
+            "total_images": 224316,
+            "train_images": 223414,
+            "valid_images": 902
+        }
+    },
+    "preprocessing": {
+        "version": "1.0.0",
+        "steps": [
+            "CLAHE",
+            "HistogramEqualization"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+﻿architecture: "efficientnet_v2"
+classification:
+  backbone: "efficientnet_v2"
+  num_classes: 5
+  pretrained: true
+  dropout_rate: 0.3
+  attention:
+    spatial: true
+    channel: true
+
+paths:
+  pretrained_weights: "models/pretrained/"
+  checkpoints: "models/checkpoints/"
+  saved_models: "models/saved/"
